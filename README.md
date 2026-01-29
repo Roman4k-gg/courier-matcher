@@ -7,10 +7,12 @@ Courier Matcher
 Этот проект иммитирует сервис по подбору курьеров для заказа
 
 Пользователь отправляет запрос со своей долготой, шириной и опцианально вид транспорта курьера(foot/bike/car)
-Пример: http://localhost:8080/find-couriers?lat=56.48&lon=84.95&radius=5000
+
+Пример: ```http://localhost:8080/find-couriers?lat=56.48&lon=84.95&radius=5000```
 
 сервис возращает топ 5 курьеров по удаленности с нужным видом транспорта
 
+```json
 {
 
     "couriers": [
@@ -29,9 +31,11 @@ Courier Matcher
             
             "vehicle": "bike"
             
-        },
-        ...
+        }
+    ]    
+
 }
+```
 
 Инструкция по запуску:
 С Docker:
@@ -46,4 +50,5 @@ Courier Matcher
 
 
 Стек: Go + PostgreSQL + Docker
+
 
