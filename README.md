@@ -6,7 +6,7 @@ bash
 git clone https://github.com/Roman4k-gg/courier-matcher
 cd courier-matcher
 
-# 1. Создай БД courier_matcher и таблицу couriers (см. README полную)
+# 1. Создай БД courier_matcher и таблицу couriers
 # 2. Заполни тестовыми данными (100 курьеров Томска)
 go mod tidy
 go run cmd/matcher/main.go
@@ -26,5 +26,6 @@ Go 1.22
 PostgreSQL
 
 net/http
+
 
 Сделано за 3 дня
